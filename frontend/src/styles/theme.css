@@ -1,0 +1,75 @@
+/* Design tokens extracted from the original Kasper Elevator landing page. */
+:root {
+  /* Backgrounds */
+  --bg: #0a172a;
+  --bg-elevated: #0c1e37;
+  --surface: #11233f;
+  --border: #1e3a5f;
+
+  /* Text */
+  --text: #ffffff;
+  --text-muted: #9db2ce;
+  --text-dim: #6f89ab;
+
+  /* Accents */
+  --accent: #3e8bff;
+  --accent-bright: #5ac8fa;
+  --success: #37d49a;
+  --whatsapp: #25d366;
+  --warning: #ff7a59;
+
+  /* Typography */
+  --font-head: 'Montserrat', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  /* Layout */
+  --maxw: 1180px;
+  --radius: 14px;
+  --radius-sm: 10px;
+  --gutter: 24px;
+
+  /* Effects */
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --ring: 0 0 0 1px var(--border);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.55;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-head);
+  line-height: 1.15;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

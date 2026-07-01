@@ -1,0 +1,15 @@
+# Environment
+.env
+.env.local
+
+# Dependencies / build artifacts
+node_modules/
+frontend/dist/
+backend/out/
+backend/server
+*.exe
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
